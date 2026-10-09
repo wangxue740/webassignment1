@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact and reservations at Le Expensziv, Paris.">
+  <title>Contact &amp; Reservations | Le Expensziv</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="branding">
+  <img src="images/logo.png" alt="Le Expensziv logo" class="site-logo">
+  <div class="branding-text">
+    <h1>Le Expensziv</h1>
+    <p class="tagline">French cuisine — exceptionally delicious</p>
+  </div>
+</div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menus.html">Menus</a></li>
+        <li><a href="story.html">Story</a></li>
+        <li><a href="location.html">Hours &amp; Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li>Contact</li>
+    </ol>
+  </nav>
+  <main id="main-content">
+    <div class="two-column">
+      <section class="card">
+        <h2>Reach the team</h2>
+        <p>
+          Phone: <a href="tel:+33155555555">+33 1 55 55 55 55</a><br>
+          Email: <a href="mailto:reservations@leexpensziv.example">reservations@leexpensziv.example</a><br>
+          Press: <a href="mailto:press@leexpensziv.example">press@leexpensziv.example</a>
+        </p>
+        <p>For same-day changes, please call the host stand directly.</p>
+      </section>
+      <section class="card">
+        <h2>Private dining</h2>
+        <p>
+          The salon seats up to sixteen guests for corporate dinners and celebrations.
+          Mention “private salon” in your reservation notes.
+        </p>
+      </section>
+      <section class="card full-width" id="reservations">
+        <h2>Reservation request</h2>
+        <form id="reservation-form" action="contact.html#reservations" method="get" novalidate>
+          <label for="guest-name">Full name</label>
+          <input type="text" id="guest-name" name="guest-name" required>
+          <label for="guest-email">Email</label>
+          <input type="email" id="guest-email" name="guest-email" required>
+          <label for="guest-phone">Phone</label>
+          <input type="tel" id="guest-phone" name="guest-phone" required>
+          <label for="visit-date">Preferred date (DD/MM/YYYY)</label>
+          <input type="text" id="visit-date" name="visit-date" placeholder="DD/MM/YYYY" required>
+          <label for="meal-type">Meal</label>
+          <select id="meal-type" name="meal-type" required>
+            <option value="">Select a service</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="brunch">Sunday brunch</option>
+          </select>
+          <label for="party-size">Party size</label>
+          <select id="party-size" name="party-size" required>
+            <option value="">Choose number of guests</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6 guests</option>
+            <option value="7">7 guests</option>
+            <option value="8">8 guests</option>
+          </select>
+          <label for="favorite-wine">Favorite wine region (optional)</label>
+          <select id="favorite-wine" name="favorite-wine">
+            <option value="">Please select wine region</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Burgundy">Burgundy</option>
+            <option value="Champagne">Champagne</option>
+            <option value="Loire Valley">Loire Valley</option>
+            <option value="Rhône Valley">Rhône Valley</option>
+          </select>
+          <fieldset>
+            <legend>Seating preference</legend>
+            <div class="inline-options">
+              <label><input type="radio" name="seating" value="window" required> Window</label>
+              <label><input type="radio" name="seating" value="booth"> Booth</label>
+              <label><input type="radio" name="seating" value="bar"> Chef&apos;s counter</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Dietary notes (select all that apply)</legend>
+            <div class="inline-options">
+              <label><input type="checkbox" name="diet" value="vegetarian"> Vegetarian</label>
+              <label><input type="checkbox" name="diet" value="gluten-aware"> Gluten-aware</label>
+              <label><input type="checkbox" name="diet" value="dairy-free"> Dairy-free</label>
+              <label><input type="checkbox" name="diet" value="none"> No restrictions</label>
+            </div>
+          </fieldset>
+          <label for="special-requests">Special requests</label>
+          <textarea id="special-requests" name="special-requests"></textarea>
+          <div class="form-actions">
+            <button type="submit">Submit reservation request</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Le Expensziv</strong>
+        <p>12 Quai de la Tournelle, 75005 Paris, France<br>
+        Phone: <a href="tel:+33155555555">+33 1 55 55 55 55</a><br>
+        Email: <a href="mailto:reservations@leexpensziv.example">reservations@leexpensziv.example</a></p>
+      </div>
+      <nav class="footer-nav">
+        <strong>Explore</strong>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menus.html">Menus</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="location.html">Hours &amp; Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="meta">Last revised: 24 September 2026 · © 2026 Le Expensziv</p>
+  </footer>
+</body>
+</html>
